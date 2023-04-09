@@ -2,10 +2,8 @@
   "env": {
     "node": true
   },
-  "plugins": ["vuejs-accessibility"],
   "extends": [
     "eslint:recommended",
-    "plugin:vue/vue3-recommended",
-    "plugin:vuejs-accessibility/recommended"
+    "plugin:vue/vue3-recommended"
   ]
 }

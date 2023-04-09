@@ -6,7 +6,7 @@
     <h1>Let's make our VueJs Single Page Application accessible</h1>
     <p>Sample app that showcases the downside of using SPA for accessibilities purposes.</p>
     <h2>Issues with SPA:</h2>
-    <nav>
+    <section>
       <router-link to="/page-navigation">
         Page Navigation
       </router-link>
@@ -16,7 +16,7 @@
       <router-link to="/components-bonanza">
         Component Bonanza
       </router-link>
-    </nav>
+    </section>
   </article>
 </template>
 

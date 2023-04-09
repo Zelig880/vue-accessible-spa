@@ -5,6 +5,9 @@
   <article>
     <h1>Let's make our VueJs Single Page Application accessible</h1>
     <h2>Page Navigation</h2>
+    <router-link to="/">
+      Back
+    </router-link>
   </article>
 </template>
 

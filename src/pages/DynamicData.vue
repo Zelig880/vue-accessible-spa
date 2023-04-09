@@ -1,27 +1,26 @@
 <script setup>
 import { ref } from 'vue';
-import { useAnnouncer } from '@vue-a11y/announcer'
 
 const dynamicNames = ref([]);
 const loading = ref(0);
-const { polite } = useAnnouncer()
 
+// Fake async loader
 const loadData = () => {
-  if ( loading.value === 100 ) {
-    setNames()
-  } else {
+  if ( loading.value !== 100 ) {
     loading.value += 25;
-    polite( `Loading at ${loading.value}%` )
-    setTimeout( loadData, 2000 )
+    setTimeout( loadData, 1000 )
+  } else {
+    setNames()
   }
 }
 
 const setNames = () => {
   dynamicNames.value = [
-    "simone",
-    "zelig",
+    "John",
+    "George",
+    "Simone",
+    "Zelig880"
   ]
-  polite( 'List of names loaded')
 }
 </script>
 
@@ -29,7 +28,7 @@ const setNames = () => {
   <article>
     <h1>Let's make our VueJs Single Page Application accessible</h1>
     <h2 for="names">
-      Dynamic Names
+      Dynamic data loading
     </h2>
     <progress
       id="names"
@@ -51,6 +50,9 @@ const setNames = () => {
         </li>
       </ul>
     </section>
+    <router-link to="/">
+      Back
+    </router-link>
   </article>
 </template>
 
@@ -66,5 +68,14 @@ const setNames = () => {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+progress {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;;
+}
+ul {
+  width: 300px;
+  margin: 15px auto;
 }
 </style>
