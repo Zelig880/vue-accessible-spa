@@ -4,6 +4,7 @@ import { createApp, h, Fragment } from 'vue/dist/vue.esm-bundler'
 import router from './router'
 import VueAnnouncer from '@vue-a11y/announcer'
 import VueSkipTo from '@vue-a11y/skip-to'
+import { default as VueAxe, VueAxePopup } from 'vue-axe'
 
 // CSS
 import './style.css'
@@ -17,8 +18,12 @@ import App from './pages/App.vue'
 
 let app = null
 
-app = createApp(App)
-
+if (process.env.NODE_ENV === 'development') {
+  app = createApp(() => h(Fragment, [h(App), h(VueAxePopup)]))
+  app.use(VueAxe)
+} else {
+  app = createApp(App)
+}
 
 app.component('DefaultLayout', DefaultLayout)
 app.use(VueAnnouncer, {router})
