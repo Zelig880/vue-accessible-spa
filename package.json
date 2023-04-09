@@ -1,0 +1,27 @@
+{
+  "name": "vue-accessible-spa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vue-a11y/announcer": "^3.1.5",
+    "@vue-a11y/skip-to": "^3.0.3",
+    "vue": "^3.2.47",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "axe-core": "^4.6.3",
+    "eslint": "^8.37.0",
+    "eslint-plugin-vue": "^9.10.0",
+    "eslint-plugin-vuejs-accessibility": "^2.1.0",
+    "vite": "^4.2.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-axe": "^3.1.2"
+  }
+}
