@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vue-a11y/announcer": "^3.1.5",
+    "@vue-a11y/skip-to": "^3.0.3",
     "vue": "^3.2.47",
     "vue-router": "4"
   },

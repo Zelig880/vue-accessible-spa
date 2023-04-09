@@ -225,6 +225,11 @@
   resolved "https://registry.yarnpkg.com/@vue-a11y/announcer/-/announcer-3.1.5.tgz#aab9e8bb7faddac69f6e8e68ab3017fb2621fd46"
   integrity sha512-eBL5b2cAjvXNGPvakrpNIj1navG1nA3jFF7z5DXrQLLYyWFjtcjdO2w8AHn7WEafU68jRNYEubP7Mv0h0WhgUQ==
 
+"@vue-a11y/skip-to@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@vue-a11y/skip-to/-/skip-to-3.0.3.tgz#14a495e795215076181a2da793ae55995db6da39"
+  integrity sha512-m7Sc4rxbehSLZncVIKT1he54zhVa+q+YOFebDQrEATpFMtsrcgnTR2DkH5OVGY33rT3MtZlpQbwYBevwplWP9w==
+
 "@vue/compiler-core@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.47.tgz#3e07c684d74897ac9aa5922c520741f3029267f8"
