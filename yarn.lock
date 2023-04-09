@@ -220,6 +220,11 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.1.0.tgz#b6a9d83cd91575f7ee15593f6444397f68751073"
   integrity sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==
 
+"@vue-a11y/announcer@^3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@vue-a11y/announcer/-/announcer-3.1.5.tgz#aab9e8bb7faddac69f6e8e68ab3017fb2621fd46"
+  integrity sha512-eBL5b2cAjvXNGPvakrpNIj1navG1nA3jFF7z5DXrQLLYyWFjtcjdO2w8AHn7WEafU68jRNYEubP7Mv0h0WhgUQ==
+
 "@vue/compiler-core@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.47.tgz#3e07c684d74897ac9aa5922c520741f3029267f8"

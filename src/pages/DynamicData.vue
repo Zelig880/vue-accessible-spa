@@ -1,14 +1,17 @@
 <script setup>
 import { ref } from 'vue';
+import { useAnnouncer } from '@vue-a11y/announcer'
 
 const dynamicNames = ref([]);
 const loading = ref(0);
+const { polite } = useAnnouncer()
 
 // Fake async loader
 const loadData = () => {
   if ( loading.value !== 100 ) {
     loading.value += 25;
-    setTimeout( loadData, 1000 )
+    polite( `Loading progress at ${loading.value}%` )
+    setTimeout( loadData, 2000 )
   } else {
     setNames()
   }
@@ -21,6 +24,7 @@ const setNames = () => {
     "Simone",
     "Zelig880"
   ]
+  polite( 'Dynamic list of names loaded.')
 }
 </script>
 

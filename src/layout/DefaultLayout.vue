@@ -1,6 +1,7 @@
 <script setup></script>
 
 <template>
+  <VueAnnouncer />
   <nav>
     <a href="/fake">Fake entry 1</a>
     <a href="/fake">Fake entry 2</a>
